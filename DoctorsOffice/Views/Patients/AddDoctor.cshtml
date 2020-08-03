@@ -1,0 +1,21 @@
+@{
+  Layout = "_Layout";
+}
+
+@model ToDoList.Models.Item
+
+<h1>Add Doctor for Patient</h1>
+<hr />
+<h3>@Model.LastName, @Model.FirstName</h3>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.PatientId)
+
+    @Html.Label("Select doctor")
+    @Html.DropDownList("DoctorId")
+
+    <input type="submit" value="Save" class="btn btn-primary" />
+}
+
+<p>@Html.ActionLink("Back to Patient List", "Index")</p>

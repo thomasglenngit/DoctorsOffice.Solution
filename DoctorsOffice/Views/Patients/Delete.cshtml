@@ -1,0 +1,15 @@
+@{
+  Layout = "_Layout";
+}
+
+@model DoctorsOffice.Models.Item
+
+<h1>Delete Patient</h1>
+<hr />
+<h3>@Model.LastName, @Model.FirstName</h3>
+<h4>Are you sure you want to delete this?</h4>
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Delete" class="btn btn-danger" />
+}
+@Html.ActionLink("Back to Patient List", "Index")

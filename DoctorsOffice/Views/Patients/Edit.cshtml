@@ -1,0 +1,31 @@
+@{
+  Layout = "_Layout";
+}
+
+@using DoctorsOffice.Models;
+@model List<DoctorsOffice.Models.Patient>;
+
+<h1>Edit a Patients Details</h1>
+<hr />
+<h3>@Model.LastName, @Model.FirstName</h3>
+
+@using (Html.BeginForm)
+{
+  @Html.HiddenFor(model => model.PatientId)
+  <div class="form-group">
+    @Html.LabelFor(model => model.FirstName)
+    @Html.EditorFor(model => model.FirstName, new { @class = "form-control", @required = true})
+  </div>
+  <div class="form-group">
+    @Html.LabelFor(model => model.LastName)
+    @Html.TextBoxFor(model => model.LastName, new { @class = "form-control", @required = true})
+  </div>
+  <div class="form-group">
+    @Html.LabelFor(model => model.BirthDate)
+    @Html.EditorFor(model => model.BirthDate, new { @class = "form-control", @require = true})
+  </div>
+  <input type="submit" value="Add New Patient" class="btn btn-success" />
+}
+
+<hr />
+<p>@Html.ActionLink("Back to Patient List", "Index")</p>

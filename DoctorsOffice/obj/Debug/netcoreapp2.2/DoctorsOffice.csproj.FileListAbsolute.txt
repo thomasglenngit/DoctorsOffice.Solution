@@ -1,0 +1,14 @@
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/bin/Debug/netcoreapp2.2/DoctorsOffice.deps.json
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/bin/Debug/netcoreapp2.2/DoctorsOffice.runtimeconfig.json
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/bin/Debug/netcoreapp2.2/DoctorsOffice.runtimeconfig.dev.json
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/bin/Debug/netcoreapp2.2/DoctorsOffice.dll
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/bin/Debug/netcoreapp2.2/DoctorsOffice.pdb
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/DoctorsOffice.csprojAssemblyReference.cache
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/DoctorsOffice.csproj.CoreCompileInputs.cache
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/DoctorsOffice.RazorAssemblyInfo.cache
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/DoctorsOffice.RazorAssemblyInfo.cs
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/DoctorsOffice.AssemblyInfoInputs.cache
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/DoctorsOffice.AssemblyInfo.cs
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/DoctorsOffice.RazorTargetAssemblyInfo.cache
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/DoctorsOffice.dll
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/DoctorsOffice.pdb

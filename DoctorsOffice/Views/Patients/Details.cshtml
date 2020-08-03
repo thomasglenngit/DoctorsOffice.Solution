@@ -1,0 +1,36 @@
+@{
+  Layout = "_Layout";
+}
+
+@model List<DoctorsOffice.Models.Patient>;
+
+<h1>Patient Details</h1>
+<hr />
+
+<h3>@Model.LastName, @Model.FirstName</h3>
+<h3>@Model.BirthDate</h3>
+<hr />
+
+<h1>Doctors</h1>
+<hr />
+
+@if(@Model.Categories.Count == 0)
+{
+  <h3>This Patient Has No Assigned Doctors</h3>
+}
+else
+{
+  @foreach(var join in Model.Doctors)
+  {
+    <h4>@join.Doctor.LastName</h4>
+    @using (Html.BeginForm("DeleteDoctor", "Patients"))
+    {
+      @Html.Hidden("joinId", @join.DoctorPatientId)
+      <input type="submit" value="Delete" class="btn btn-warning"/>
+    }
+  }
+}
+<p>@Html.ActionLink("Back to Patient List", "Index")</p>
+<p>@Html.ActionLink("Edit Patient Details", "Edit", new { id = Model.PatientId })</p>
+<p>@Html.ActionLink("Delete Patient", "Delete", new { id = Model.PatientId })</p>
+<p>@Html.ActionLink("Add a Doctor", "AddDoctor", new { id = Model.PatientId })</p>
