@@ -2961,8 +2961,18 @@
   "RootNamespace": "DoctorsOffice",
   "Documents": [
     {
+      "FilePath": "/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/Views/Specialties/Delete.cshtml",
+      "TargetPath": "Views\\Specialties\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/Views/Doctors/Index.cshtml",
       "TargetPath": "Views\\Doctors\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/Views/Specialties/Create.cshtml",
+      "TargetPath": "Views\\Specialties\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -3008,6 +3018,11 @@
     {
       "FilePath": "/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/Views/Patients/Index.cshtml",
       "TargetPath": "Views\\Patients\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/Views/Specialties/Index.cshtml",
+      "TargetPath": "Views\\Specialties\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
