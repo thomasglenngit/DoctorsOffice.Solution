@@ -8,6 +8,7 @@ namespace DoctorsOffice.Models
     public Doctor()
     {
       this.Patients = new HashSet<DoctorPatient>();
+      this.Specialties = new HashSet<DoctorSpecialty>();
     }
 
     public int DoctorId { get; set; }
@@ -15,5 +16,6 @@ namespace DoctorsOffice.Models
     public string LastName { get; set; }
 
     public virtual ICollection<DoctorPatient> Patients { get; set; }
+    public virtual ICollection<DoctorSpecialty> Specialties { get; set; }
   }
 }

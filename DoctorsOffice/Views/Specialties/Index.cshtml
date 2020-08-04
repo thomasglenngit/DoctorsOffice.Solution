@@ -17,7 +17,7 @@
 @foreach (Specialty specialty in Model)
 {
   <div class="specialty">
-    <h4>@Html.ActionLink($"{specialty.Specialty}", "Details", new { id = specialty.SpecialtyId})</h4>
+    <h4>@Html.ActionLink($"{specialty.SpecialtyName}", "Details", new { id = specialty.SpecialtyId})</h4>
     <hr />
     foreach (Doctor doctor in ViewBag.Doctors)
     {

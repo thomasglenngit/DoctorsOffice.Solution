@@ -1,5 +1,6 @@
-using System;
 using System.Collections.Generic;
+using System;
+
 
 namespace DoctorsOffice.Models
 {
@@ -10,7 +11,7 @@ namespace DoctorsOffice.Models
       this.Doctors = new HashSet<DoctorSpecialty>();
     }
     public int SpecialtyId { get; set; }
-    public string Specialty { get; set; }
-    public ICollection<DoctorSpecialty> Specialties { get; }
+    public string SpecialtyName { get; set; }
+    public ICollection<DoctorSpecialty> Doctors { get; }
   }
 }

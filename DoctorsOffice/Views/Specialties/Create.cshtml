@@ -10,8 +10,8 @@
 @using (Html.BeginForm())
 {
   <div class="form-group">
-    @Html.LabelFor(model => model.Specialty)
-    @Html.TextBoxFor(model => model.Specialty, new { @class = "form-control", @required = true})
+    @Html.LabelFor(model => model.SpecialtyName)
+    @Html.TextBoxFor(model => model.SpecialtyName, new { @class = "form-control", @required = true})
   </div>
   <input type="submit" value="Add New Specialty" class="btn btn-success" />
 }
