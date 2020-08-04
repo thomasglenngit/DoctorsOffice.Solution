@@ -3,28 +3,28 @@
 }
 
 @using DoctorsOffice.Models;
-@model List<DoctorsOffice.Models.Patient>;
+@model DoctorsOffice.Models.Patient;
 
-<h1>Edit a Patients Details</h1>
+<h1>Edit Patient Details</h1>
 <hr />
-<h3>@Model.LastName, @Model.FirstName</h3>
+<h3>@Html.DisplayFor(model => @Model.LastName), @Html.DisplayFor(model => @Model.FirstName)</h3></h3>
 
-@using (Html.BeginForm)
+@using (Html.BeginForm())
 {
   @Html.HiddenFor(model => model.PatientId)
   <div class="form-group">
     @Html.LabelFor(model => model.FirstName)
-    @Html.EditorFor(model => model.FirstName, new { @class = "form-control", @required = true})
+    @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control", @required = true})
   </div>
   <div class="form-group">
     @Html.LabelFor(model => model.LastName)
     @Html.TextBoxFor(model => model.LastName, new { @class = "form-control", @required = true})
   </div>
   <div class="form-group">
-    @Html.LabelFor(model => model.BirthDate)
-    @Html.EditorFor(model => model.BirthDate, new { @class = "form-control", @require = true})
+    @Html.LabelFor(model => model.Birthday)
+    @Html.TextBoxFor(model => model.Birthday, new { @class = "form-control", @type="date", @require = true})
   </div>
-  <input type="submit" value="Add New Patient" class="btn btn-success" />
+  <input type="submit" value="Edit Patient" class="btn btn-success" />
 }
 
 <hr />

@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using ToDoList.Models;
+using DoctorsOffice.Models;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
@@ -18,12 +18,12 @@ namespace DoctorsOffice.Controllers
 
     public ActionResult Index()
     {
-      return View(_db.Patients.OrderBy(patient => patient.DueDate).ToList());
+      return View(_db.Patients.OrderBy(patient => patient.Birthday).ToList());
     }
 
     public ActionResult Create()
     {
-      ViewBag.DoctorId = new SelectList(_db.Doctors, "DoctorId", "Name");
+      ViewBag.DoctorId = new SelectList(_db.Doctors, "DoctorId", "LastName");
       return View();
     }
 
@@ -33,7 +33,7 @@ namespace DoctorsOffice.Controllers
       _db.Patients.Add(patient);
       if (DoctorId != 0)
       {
-        _db.DoctorPatient.Add(new DoctorPatient() { DoctorId = DoctorId, patientId = Patient.PatientId });
+        _db.DoctorPatient.Add(new DoctorPatient() { DoctorId = DoctorId, PatientId = patient.PatientId });
       }
       _db.SaveChanges();
       return RedirectToAction("Index");
@@ -51,7 +51,7 @@ namespace DoctorsOffice.Controllers
       public ActionResult Edit(int id)
       {
         var thisPatient = _db.Patients.FirstOrDefault(patients => patients.PatientId == id);
-        ViewBag.DoctorId = new SelectList(_db.Doctors, "DoctorId", "Name");
+        ViewBag.DoctorId = new SelectList(_db.Doctors, "DoctorId", "LastName");
         return View(thisPatient);
       }
 
@@ -60,7 +60,7 @@ namespace DoctorsOffice.Controllers
       {
         if (DoctorId != 0)
         {
-          _db.DoctorPatient.Add(new DoctorPatient() {DoctorId = DoctorId, patientId = Patient.PatientId});
+          _db.DoctorPatient.Add(new DoctorPatient() {DoctorId = DoctorId, PatientId = patient.PatientId});
         }
         _db.Entry(patient).State = EntityState.Modified;
         _db.SaveChanges();
@@ -70,7 +70,7 @@ namespace DoctorsOffice.Controllers
       public ActionResult AddDoctor(int id)
       {
         var thisPatient = _db.Patients.FirstOrDefault(patients => patients.PatientId == id);
-        ViewBag.DoctorId = new SelectList(_db.Doctors, "DoctorId", "Name");
+        ViewBag.DoctorId = new SelectList(_db.Doctors, "DoctorId", "LastName");
         return View(thisPatient);
       }
 
@@ -79,7 +79,7 @@ namespace DoctorsOffice.Controllers
       {
         if (DoctorId != 0)
         {
-          _db.DoctorPatient.Add(new DoctorPatient() { DoctorId = DoctorId, patientId = Patient.PatientId});
+          _db.DoctorPatient.Add(new DoctorPatient() { DoctorId = DoctorId, PatientId = patient.PatientId});
         }
         _db.SaveChanges();
         return RedirectToAction("Index");

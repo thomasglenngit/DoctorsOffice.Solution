@@ -6,19 +6,19 @@
 
 <h2>Edit</h2>
 
-<h4>Edit this doctor: @Html.DisplayFor(model => model.FirstName, model => model.LastName)</h4>
+<h4>Edit this doctor: @Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName)</h4>
 
 @using (Html.BeginForm())
 {
-  @Html.HiddenFor(model => model.Doctor.Id)
+  @Html.HiddenFor(model => model.DoctorId)
 <div class="form-group">
   @Html.LabelFor(model => model.FirstName)
-  @Html.EditFor(model => model.FirstName, new { @class = "form-control", @required = true})
+  @Html.EditorFor(model => model.FirstName, new { @class = "form-control", @required = true})
 </div>
 
 <div class="form-group">
   @Html.LabelFor(model => model.LastName)
-  @Html.EditFor(model => model.LastName, new { @class = "form-control", @required = true})
+  @Html.EditorFor(model => model.LastName, new { @class = "form-control", @required = true})
 </div>
   
   <input type="submit" value="Save" />

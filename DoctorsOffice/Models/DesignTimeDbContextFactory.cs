@@ -5,7 +5,7 @@ using System.IO;
 
 namespace DoctorsOffice.Models
 {
-  public class DoctorsOfficeConextFactory : IDesignTimeDbContextFactory<DoctorsOfficeContext>
+  public class DoctorsOfficeContextFactory : IDesignTimeDbContextFactory<DoctorsOfficeContext>
   {
     DoctorsOfficeContext IDesignTimeDbContextFactory<DoctorsOfficeContext>.CreateDbContext(string[] args)
     {

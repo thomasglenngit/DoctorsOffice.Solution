@@ -20,7 +20,7 @@ else
   <ul>
   @foreach(var join in Model.Patients)
   {
-    <li>@join.Patient.Description</li>
+    <li>@join.Patient.LastName, @join.Patient.FirstName</li>
   }
   </ul>
 

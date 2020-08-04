@@ -2,19 +2,19 @@
   Layout = "_Layout";
 }
 
-@model List<DoctorsOffice.Models.Patient>;
+@model DoctorsOffice.Models.Patient;
 
 <h1>Patient Details</h1>
 <hr />
 
 <h3>@Model.LastName, @Model.FirstName</h3>
-<h3>@Model.BirthDate</h3>
+<h3>@Html.ValueFor(model => model.Birthday, "{0:MM/dd/yyyy}")</h3>
 <hr />
 
 <h1>Doctors</h1>
 <hr />
 
-@if(@Model.Categories.Count == 0)
+@if(@Model.Doctors.Count == 0)
 {
   <h3>This Patient Has No Assigned Doctors</h3>
 }

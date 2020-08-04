@@ -16,9 +16,9 @@
     @Html.TextBoxFor(model => model.LastName, new { @class = "form-control", @required = true})
   </div>
   <div class="form-group">
-     @Html.LabelFor(model => model.Specialty)
+    @Html.LabelFor(model => model.Specialty)
     @Html.TextBoxFor(model => model.Specialty, new { @class = "form-control", @required = true})
     <input type="submit" value="Add new doctor" />
   </div>
 }
-<p>@Html.ActionLink("Show all categories", "Index")</p>
+<p>@Html.ActionLink("Show all Doctors", "Index")</p>
