@@ -23,10 +23,10 @@
     {
       if (doctor.SpecialtyId == specialty.SpecialtyId)
       {
-      <p>@Html.ActionLink($"{doctor.LastName}, {doctor.FirstName}", "Details", "Doctors", new { id = doctor.DoctorId})</p>
+        <p>@Html.ActionLink($"{ViewBag.doctor.LastName}, {ViewBag.doctor.FirstName}", "Details", "Doctors", new { id = ViewBag.doctor.DoctorId})</p>
       }
     }
-    <p>@Html.ActionLink("Delete Specialty", "Delete", new { id = Model.SpecialtyId })</p>
+    <p>@Html.ActionLink("Delete Specialty", "Delete", new { id = specialty.SpecialtyId })</p>
   </div>
 }
 <hr />

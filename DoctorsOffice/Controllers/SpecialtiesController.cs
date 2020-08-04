@@ -19,7 +19,7 @@ namespace DoctorsOffice.Controllers
     public ActionResult Index()
     {
       ViewBag.Doctors = new List<Doctor>(_db.Doctors.ToList());
-      return View(_db.Specialties.OrderBy(Doctor => Doctor.Specialty)).ToList());
+      return View(_db.Specialties.OrderBy(Doctor => Doctor.SpecialtyName).ToList());
     }
   
     public ActionResult Create()

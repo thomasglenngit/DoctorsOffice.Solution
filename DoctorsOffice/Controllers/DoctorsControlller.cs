@@ -3,6 +3,7 @@ using DoctorsOffice.Models;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace DoctorsOffice.Controllers
 {
@@ -58,7 +59,7 @@ namespace DoctorsOffice.Controllers
     {
       if (SpecialtyId != 0)
       {
-        _db.DoctorSpecialty.Add(new DoctorSpecialty() { DoctorId = DoctorId, SpecialtyId = specialty.SpecialtyId});
+        _db.DoctorSpecialty.Add(new DoctorSpecialty() { DoctorId = doctor.DoctorId, SpecialtyId = SpecialtyId});
       }
       _db.SaveChanges();
       return RedirectToAction("Index");

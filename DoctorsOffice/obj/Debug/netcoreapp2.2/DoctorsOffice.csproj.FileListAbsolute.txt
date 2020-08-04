@@ -33,3 +33,6 @@
 /Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/bin/Debug/netcoreapp2.2/DoctorsOffice.Views.pdb
 /Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/DoctorsOffice.Views.pdb
 /Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/DoctorsOffice.csproj.CopyComplete
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/Razor/Views/Specialties/Create.g.cshtml.cs
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/Razor/Views/Specialties/Delete.g.cshtml.cs
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/Razor/Views/Specialties/Index.g.cshtml.cs

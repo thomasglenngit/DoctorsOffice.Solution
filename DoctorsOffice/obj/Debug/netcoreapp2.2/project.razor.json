@@ -2976,6 +2976,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/Views/Doctors/AddSpecialty.cshtml",
+      "TargetPath": "Views\\Doctors\\AddSpecialty.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/Views/Patients/Delete.cshtml",
       "TargetPath": "Views\\Patients\\Delete.cshtml",
       "FileKind": "mvc"
