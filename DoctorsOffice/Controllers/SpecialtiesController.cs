@@ -7,11 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace DoctorsOffice.Controllers
 {
-  public class SpecialtyController : Controller
+  public class SpecialtiesController : Controller
   {
     private readonly DoctorsOfficeContext _db;
 
-    public SpecialtyController(DoctorsOfficeContext db)
+    public SpecialtiesController(DoctorsOfficeContext db)
     {
       _db = db;
     }
@@ -37,8 +37,8 @@ namespace DoctorsOffice.Controllers
 
     public ActionResult Delete(int id)
       {
-        var thisPatient = _db.Patients.FirstOrDefault(patients => patients.PatientId == id);
-        return View(thisPatient);
+        var thisSpecialty = _db.Specialties.FirstOrDefault(specialties => specialties.SpecialtyId == id);
+        return View(thisSpecialty);
       }
 
     [HttpPost, ActionName("Delete")]
@@ -48,6 +48,12 @@ namespace DoctorsOffice.Controllers
       _db.Specialties.Remove(thisSpecialty);
       _db.SaveChanges();
       return RedirectToAction("Index");
+    }
+
+    public ActionResult Details(int id)
+    {
+      var thisSpecialty = _db.Specialties.Include(specialty => specialty.Doctors).FirstOrDefault(specialties => specialties.SpecialtyId == id);
+      return View(thisSpecialty);
     }
   }
 }

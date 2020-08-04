@@ -12,6 +12,6 @@ namespace DoctorsOffice.Models
     }
     public int SpecialtyId { get; set; }
     public string SpecialtyName { get; set; }
-    public ICollection<DoctorSpecialty> Doctors { get; }
+    public ICollection<DoctorSpecialty> Doctors { get; set; }
   }
 }

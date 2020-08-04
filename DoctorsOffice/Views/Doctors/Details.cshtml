@@ -8,7 +8,7 @@
 <h2>Doctor Details</h2>
 <hr />
 <h3>@Model.FirstName @Model.LastName</h3>
-
+<hr />
 <ul>
 @if (@Model.Patients.Count == 0)
 {
@@ -16,16 +16,19 @@
 }
 else
 {
-  <h4>Patients the Doctor contains:</h4>
-  <ul>
+  <h4>Patients</h4>
   @foreach(var join in Model.Patients)
   {
     <li>@join.Patient.LastName, @join.Patient.FirstName</li>
   }
-  </ul>
-
+  <hr />
+  <h4>Specialties</h4>
+  @foreach(var join in Model.Specialties)
+  {
+    <li>@join.Specialty.SpecialtyName</li>
+  }
 }
-
+<hr />
 <p>@Html.ActionLink("Back to doctors", "Index")</p>
 <p>@Html.ActionLink("Edit Doctor", "Edit", new { id = Model.DoctorId })</p>
 <p>@Html.ActionLink("Add a Specialty", "AddSpecialty", new { id = Model.DoctorId })</p>

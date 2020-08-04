@@ -49,7 +49,7 @@ namespace DoctorsOffice.Controllers
     public ActionResult AddSpecialty(int id)
     {
       var thisDoctor = _db.Doctors.FirstOrDefault(doctors => doctors.DoctorId == id);
-      ViewBag.SpecialtyId = new SelectList(_db.Specialties, "SpecialtyId", "Specialty");
+      ViewBag.SpecialtyId = new SelectList(_db.Specialties, "SpecialtyId", "SpecialtyName");
       return View(thisDoctor);
 
     }

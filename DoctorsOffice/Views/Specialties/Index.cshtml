@@ -18,17 +18,8 @@
 {
   <div class="specialty">
     <h4>@Html.ActionLink($"{specialty.SpecialtyName}", "Details", new { id = specialty.SpecialtyId})</h4>
-    <hr />
-    foreach (Doctor doctor in ViewBag.Doctors)
-    {
-      if (doctor.SpecialtyId == specialty.SpecialtyId)
-      {
-        <p>@Html.ActionLink($"{ViewBag.doctor.LastName}, {ViewBag.doctor.FirstName}", "Details", "Doctors", new { id = ViewBag.doctor.DoctorId})</p>
-      }
-    }
-    <p>@Html.ActionLink("Delete Specialty", "Delete", new { id = specialty.SpecialtyId })</p>
   </div>
 }
-<hr />
+
 <p>@Html.ActionLink("Add Specialty", "Create")</p>
 <p>@Html.ActionLink("Home", "Index", "Home")</p>

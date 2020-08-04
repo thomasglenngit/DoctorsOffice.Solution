@@ -3001,6 +3001,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/Views/Specialties/Details.cshtml",
+      "TargetPath": "Views\\Specialties\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/Views/Patients/Edit.cshtml",
       "TargetPath": "Views\\Patients\\Edit.cshtml",
       "FileKind": "mvc"

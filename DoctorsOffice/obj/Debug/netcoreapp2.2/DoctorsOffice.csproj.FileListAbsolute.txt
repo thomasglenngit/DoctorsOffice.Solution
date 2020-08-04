@@ -36,3 +36,5 @@
 /Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/Razor/Views/Specialties/Create.g.cshtml.cs
 /Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/Razor/Views/Specialties/Delete.g.cshtml.cs
 /Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/Razor/Views/Specialties/Index.g.cshtml.cs
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/Razor/Views/Doctors/AddSpecialty.g.cshtml.cs
+/Users/thomasglenn/Desktop/Csharp/DoctorsOffice.Solution/DoctorsOffice/obj/Debug/netcoreapp2.2/Razor/Views/Specialties/Details.g.cshtml.cs
