@@ -52,7 +52,7 @@ namespace DoctorsOffice.Controllers
 
     public ActionResult Details(int id)
     {
-      var thisSpecialty = _db.Specialties.Include(specialty => specialty.Doctors).FirstOrDefault(specialties => specialties.SpecialtyId == id);
+      var thisSpecialty = _db.Specialties.Include(specialty => specialty.Doctors).ThenInclude(join => join.Doctor).FirstOrDefault(specialties => specialties.SpecialtyId == id);
       return View(thisSpecialty);
     }
   }

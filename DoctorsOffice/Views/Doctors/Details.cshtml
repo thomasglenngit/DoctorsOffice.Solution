@@ -19,13 +19,13 @@ else
   <h4>Patients</h4>
   @foreach(var join in Model.Patients)
   {
-    <li>@join.Patient.LastName, @join.Patient.FirstName</li>
+    <li>@Html.ActionLink($"{@join.Patient.LastName}, {@join.Patient.FirstName}", "Details", "Patients", new {id = join.PatientId})</li>
   }
   <hr />
   <h4>Specialties</h4>
   @foreach(var join in Model.Specialties)
   {
-    <li>@join.Specialty.SpecialtyName</li>
+    <li>@Html.ActionLink(@join.Specialty.SpecialtyName, "Details", "Specialties", new {id = join.SpecialtyId})</li>
   }
 }
 <hr />

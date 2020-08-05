@@ -17,7 +17,7 @@ else
   <h4>Doctors</h4>
   @foreach(var join in Model.Doctors)
   {
-    <li>@Html.ActionLink(@join.Doctor.LastName, @join.Doctor.FirstName, "Details", "Index", new {id = join.DoctorSpecialtyId}) </li>
+    <li>@Html.ActionLink($"{@join.Doctor.LastName}, {@join.Doctor.FirstName}", "Details", "Doctors", new {id = join.DoctorId}) </li>
   }
 }
 <hr />
