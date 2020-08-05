@@ -22,7 +22,7 @@ else
 {
   @foreach(var join in Model.Doctors)
   {
-    <h4>@join.Doctor.LastName</h4>
+    <h4>@Html.ActionLink(@join.Doctor.LastName, "Details", "Doctors", new {id = join.DoctorId})</h4>
     @using (Html.BeginForm("DeleteDoctor", "Patients"))
     {
       @Html.Hidden("joinId", @join.DoctorPatientId)

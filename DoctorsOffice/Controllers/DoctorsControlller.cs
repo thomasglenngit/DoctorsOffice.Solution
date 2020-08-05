@@ -38,10 +38,10 @@ namespace DoctorsOffice.Controllers
     public ActionResult Details(int id)
     {
       var thisDoctor = _db.Doctors
-        .Include(doctor => doctor.Patients)
-        .ThenInclude(join => join.Patient)
-        .Include(doctor => doctor.Specialties)
-        .ThenInclude(join => join.Specialty)
+        .Include(doctor => doctor.Patients)                 //doctorPatient join
+        .ThenInclude(join => join.Patient)                  //patient data
+        .Include(doctor => doctor.Specialties)              //doctorSpecialty join
+        .ThenInclude(join => join.Specialty)                //specialty data
         .FirstOrDefault(Doctor => Doctor.DoctorId == id);
       return View(thisDoctor);
     }
