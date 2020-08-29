@@ -1,4 +1,4 @@
-<h1 align='center'><img width='900' height='450' src='cats at a shelter https://coding-assets.s3.us-west-2.amazonaws.com/hero_images/animal-shelter.jpg'><br>
+<h1 align='center'><img width='900' height='450' src='https://thumbs.dreamstime.com/z/doctor-medical-woman-office-health-care-32541605.jpg'><br>
 
 
 **<h1 align = 'center'>Doctor's Office**
