@@ -97,7 +97,7 @@ with the root project folder open in your code editor, execute the following in 
 
 # **❤️Contributors**
 
-| [<img src='https://coding-assets.s3-us-west-2.amazonaws.com/linked-in-images/tyson-lackey.jpeg' width='160px;'/><br /><sub><b>Tyson Lackey</b></sub>](https://www.linkedin.com/in/tyson-lackey/)<br />
+ [<img src='https://coding-assets.s3-us-west-2.amazonaws.com/linked-in-images/tyson-lackey.jpeg' width='160px;'/><br /><sub><b>Tyson Lackey</b></sub>](https://www.linkedin.com/in/tyson-lackey/)<br />
 
 <br>
 
