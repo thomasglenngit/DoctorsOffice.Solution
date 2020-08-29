@@ -1,4 +1,4 @@
-<h1 align='center'><img width='900' height='450' src='https://thumbs.dreamstime.com/z/doctor-medical-woman-office-health-care-32541605.jpg'><br>
+<h1 align='center'><img width='900' height='450' src='https://clipground.com/images/doctor-office-clipart-7.jpg'><br>
 
 
 **<h1 align = 'center'>Doctor's Office**
